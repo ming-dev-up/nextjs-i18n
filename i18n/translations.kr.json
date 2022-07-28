@@ -17,16 +17,16 @@
             "coinText": "Coin 페이지 입니다."
         },
         "project": {
-            "projectText": "project 페이지 입니다."
+            "projectText": "Project 페이지 입니다."
         },
         "partners": {
             "partnersText": "Partnerts 페이지 입니다."
         },
-        "contact": {
-            "contactText": "contact 페이지 입니다."
-        },
         "news": {
             "newsText": "News 페이지 입니다."
+        },
+        "contact": {
+            "contactText": "contact 페이지 입니다."
         }
     }
 }

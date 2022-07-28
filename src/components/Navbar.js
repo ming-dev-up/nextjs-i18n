@@ -47,9 +47,6 @@ const Navbar = () => {
             <div className={styles.langSwitcher}>
                 <LanguageSwitcher lang="kr">kr</LanguageSwitcher> |{" "}
                 <LanguageSwitcher lang="en">en</LanguageSwitcher>
-                {/* <Link
-                    href={{ pathname: t("nav.nyc.route"), query: query }}
-                ></Link> */}
             </div>
         </nav>
     );

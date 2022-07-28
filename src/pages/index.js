@@ -2,11 +2,7 @@ import React from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
-import {
-    useTranslation,
-    useLanguageQuery,
-    LanguageSwitcher,
-} from "next-export-i18n";
+import { useTranslation, useLanguageQuery } from "next-export-i18n";
 
 export default function Home() {
     const { t } = useTranslation();
