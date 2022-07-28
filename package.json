@@ -1,20 +1,22 @@
 {
-  "name": "nextjs-i18n",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "12.2.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "eslint": "8.20.0",
-    "eslint-config-next": "12.2.3"
-  }
+    "name": "nextjs-i18n",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build && next export",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "next": "12.2.3",
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
+    },
+    "devDependencies": {
+        "eslint": "8.20.0",
+        "eslint-config-next": "12.2.3",
+        "next-export-i18n": "^2.0.3",
+        "prettier": "2.3.2"
+    }
 }

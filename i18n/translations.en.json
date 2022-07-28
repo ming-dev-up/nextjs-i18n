@@ -1,0 +1,32 @@
+{
+    "i18n": {
+        "ui": {
+            "languageSwitcher": "Choose Language."
+        },
+        "nav": {},
+        "intro": {
+            "introText": "Intro"
+        },
+        "tech": {
+            "techText": "Tech"
+        },
+        "pricing": {
+            "pricingText": "Pricing"
+        },
+        "coin": {
+            "coinText": "Coin"
+        },
+        "project": {
+            "projectText": "project"
+        },
+        "partners": {
+            "partnersText": "Partnerts"
+        },
+        "contact": {
+            "contactText": "Contact"
+        },
+        "news": {
+            "newsText": "News"
+        }
+    }
+}

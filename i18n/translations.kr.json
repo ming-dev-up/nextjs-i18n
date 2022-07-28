@@ -1,0 +1,32 @@
+{
+    "i18n": {
+        "ui": {
+            "languageSwitcher": "언어를 선택해주세요."
+        },
+        "nav": {},
+        "intro": {
+            "introText": "Intro 페이지 입니다."
+        },
+        "tech": {
+            "techText": "Tech 페이지 입니다."
+        },
+        "pricing": {
+            "pricingText": "Pricing 페이지 입니다."
+        },
+        "coin": {
+            "coinText": "Coin 페이지 입니다."
+        },
+        "project": {
+            "projectText": "project 페이지 입니다."
+        },
+        "partners": {
+            "partnersText": "Partnerts 페이지 입니다."
+        },
+        "contact": {
+            "contactText": "contact 페이지 입니다."
+        },
+        "news": {
+            "newsText": "News 페이지 입니다."
+        }
+    }
+}
