@@ -1,4 +1,4 @@
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Layouts.module.css";
 import Link from "next/link";
 
 import {
@@ -13,9 +13,11 @@ const Navbar = () => {
 
     return (
         <nav className={styles.nav}>
-            <Link href="/">
-                <h2>Logo Image</h2>
-            </Link>
+            <div className={styles.logo}>
+                <Link href="/">
+                    <h2>Logo Image</h2>
+                </Link>
+            </div>
 
             <div className={styles.navLink}>
                 <Link href="/">

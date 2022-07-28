@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Head from "next/head";
+// import Modal from "../componnents/Modal";
 import styles from "../styles/Home.module.css";
 
 import { useTranslation, useLanguageQuery } from "next-export-i18n";
@@ -7,9 +8,9 @@ import { useTranslation, useLanguageQuery } from "next-export-i18n";
 export default function Home() {
     const { t } = useTranslation();
     const [query] = useLanguageQuery();
-
+    const [showModal, setShowModal] = useState(false);
     return (
-        <div className={styles.container}>
+        <div>
             <Head>
                 <title>Ledgis - The New Block Order</title>
                 <meta
@@ -22,9 +23,17 @@ export default function Home() {
             <main className={styles.main}>
                 <h1>{t("ui.languageSwitcher")}</h1>
                 <h2>{t("intro.introText")}</h2>
-                <div className={styles.card} href="/Modal">
-                    Modal Button
-                </div>
+                <button
+                    className={styles.btn}
+                    onClick={() => setShowModal(true)}
+                >
+                    Modal
+                </button>
+                {/* {showModal && (
+                    <Modal onClose={() => setShowModal(false)} show={showModal}>
+                        hihi
+                    </Modal>
+                )} */}
             </main>
         </div>
     );

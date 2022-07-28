@@ -3,6 +3,7 @@
     --pure-white: #ffffff;
     --pure-black: #000000;
     --primary-color: #aa80de;
+    --beige: beige;
 }
 
 html,
@@ -27,7 +28,7 @@ a {
         color-scheme: var(--pure-white);
     }
     body {
-        color: white;
+        color: var(--pure-white);
         background: var(--pure-white);
     }
 }
