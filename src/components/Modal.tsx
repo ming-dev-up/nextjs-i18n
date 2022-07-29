@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import styles from "../styles/Modal.module.css";
 
@@ -12,23 +12,26 @@ function Modal({ show, onClose, children }) {
         setIsBrowser(true);
     }, []);
 
-    const handleClose = e => {
+    const handleClose = (e: any) => {
         e.preventDefault();
-        onClose;
+        onClose();
     };
 
     const modalContent = show ? (
         <div className={styles.overlay}>
             <div className={styles.modal}>
                 <div className={styles.header}>
-                    <Link href="/" onClick={handleClose}>
-                        <button className={styles.btn}>Close</button>
+                    <Link href="#">
+                        <button onClick={handleClose} className={styles.btn}>
+                            Close
+                        </button>
                     </Link>
                 </div>
-                <div className={styles.body}>{children} </div>
+                <div>{children}</div>
             </div>
         </div>
     ) : null;
+
     if (isBrowser) {
         return ReactDOM.createPortal(
             modalContent,

@@ -4,6 +4,7 @@
     --pure-black: #000000;
     --primary-color: #aa80de;
     --beige: beige;
+    --rgba: rgba(0, 0, 0, 0.2);
 }
 
 html,

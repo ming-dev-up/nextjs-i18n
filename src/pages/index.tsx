@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import Head from "next/head";
-// import Modal from "../componnents/Modal";
+import Modal from "../components/Modal";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 
-import { useTranslation, useLanguageQuery } from "next-export-i18n";
+import { useTranslation } from "next-export-i18n";
 
 export default function Home() {
     const { t } = useTranslation();
-    const [query] = useLanguageQuery();
     const [showModal, setShowModal] = useState(false);
+
     return (
         <div>
             <Head>
@@ -39,11 +39,10 @@ export default function Home() {
                 >
                     Modal
                 </button>
-                {/* {showModal && (
-                    <Modal onClose={() => setShowModal(false)} show={showModal}>
-                        hihi
-                    </Modal>
-                )} */}
+
+                <Modal show={showModal} onClose={() => setShowModal(false)}>
+                    모달창이라구우우우
+                </Modal>
             </main>
         </div>
     );

@@ -58,7 +58,6 @@
 
     font-weight: normal;
     position: relative;
-    z-index: 1;
 }
 
 .langSwitcher [data-language-switcher] {
