@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 // import Modal from "../componnents/Modal";
 import styles from "../styles/Home.module.css";
+import Image from "next/image";
 
 import { useTranslation, useLanguageQuery } from "next-export-i18n";
 
@@ -23,6 +24,15 @@ export default function Home() {
             <main className={styles.main}>
                 <h1>{t("ui.languageSwitcher")}</h1>
                 <h2>{t("intro.introText")}</h2>
+
+                <div className={styles.img}>
+                    <Image
+                        width={700}
+                        height={475}
+                        src={t("intro.introTestImage")}
+                    />
+                </div>
+
                 <button
                     className={styles.btn}
                     onClick={() => setShowModal(true)}

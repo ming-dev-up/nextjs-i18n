@@ -30,6 +30,11 @@
     border-color: var(--primary-color);
 }
 
+.img {
+    width: 50%;
+    height: 30%;
+}
+
 .display {
     display: none;
 }

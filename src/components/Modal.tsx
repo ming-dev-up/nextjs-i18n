@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "../styles/Modal.module.css";
 
 import ReactDOM from "react-dom";
+import Link from "next/link";
 
 function Modal({ show, onClose, children }) {
     const [isBrowser, setIsBrowser] = useState(false);
@@ -20,9 +21,9 @@ function Modal({ show, onClose, children }) {
         <div className={styles.overlay}>
             <div className={styles.modal}>
                 <div className={styles.header}>
-                    <a href="/" onClick={handleClose}>
+                    <Link href="/" onClick={handleClose}>
                         <button className={styles.btn}>Close</button>
-                    </a>
+                    </Link>
                 </div>
                 <div className={styles.body}>{children} </div>
             </div>

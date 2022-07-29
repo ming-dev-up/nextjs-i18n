@@ -5,7 +5,8 @@
         },
         "nav": {},
         "intro": {
-            "introText": "Intro 페이지 입니다."
+            "introText": "Intro 페이지 입니다.",
+            "introTestImage": "/image/kr/kr.jpeg"
         },
         "tech": {
             "techText": "Tech 페이지 입니다."

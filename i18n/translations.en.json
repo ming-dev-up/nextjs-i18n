@@ -5,7 +5,8 @@
         },
         "nav": {},
         "intro": {
-            "introText": "Intro Page"
+            "introText": "Intro Page",
+            "introTestImage": "/image/en/en.jpeg"
         },
         "tech": {
             "techText": "Tech Page"
