@@ -3,11 +3,9 @@ import Head from "next/head";
 import Modal from "../components/Modal/Modal";
 import styles from "../styles/Home.module.css";
 
-import { useRouter } from "next/router";
 import useTranslation from "next-translate/useTranslation";
 
 export default function Home() {
-    let router = useRouter();
     const { t } = useTranslation();
     const [showModal, setShowModal] = useState(false);
 
