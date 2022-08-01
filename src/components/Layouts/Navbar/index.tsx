@@ -22,7 +22,7 @@ const Navbar = () => {
                 <Link passHref href="/">
                     <a>Intro</a>
                 </Link>
-                <Link passHref href="/Community">
+                <Link passHref href="/Tech">
                     <a>Tech</a>
                 </Link>
                 <Link passHref href="/Ecosystem">

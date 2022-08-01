@@ -1,3 +1,7 @@
 {
-    "introText": "Intro Page"
+    "introText": "Intro Page",
+    "techText": "Tech Page",
+    "communityText": "Community Page",
+    "governanceText": "Gvernance Page",
+    "ecosystemText": "Ecosystem Page"
 }
