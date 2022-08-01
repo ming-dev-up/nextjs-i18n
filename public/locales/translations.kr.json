@@ -1,0 +1,24 @@
+{
+    "i18n": {
+        "ui": {
+            "languageSwitcher": "언어를 선택해주세요."
+        },
+        "nav": {},
+        "intro": {
+            "introText": "Intro 페이지 입니다.",
+            "introTestImage": "/image/kr/kr.jpeg"
+        },
+        "tech": {
+            "techText": "Tech 페이지 입니다."
+        },
+        "ecosystem": {
+            "ecosystemText": "Ecosystem 페이지 입니다."
+        },
+        "governance": {
+            "governanceText": "Governance 페이지 입니다."
+        },
+        "community": {
+            "communityText": "Community 페이지 입니다."
+        }
+    }
+}

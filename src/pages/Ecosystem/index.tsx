@@ -1,15 +1,14 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
 
-import { useTranslation } from "next-export-i18n";
-
-const Pricing = () => {
+import { useTranslation } from "next-i18next";
+const Ecosystem = () => {
     const { t } = useTranslation();
     return (
         <div className={styles.main}>
-            <h1>{t("pricing.pricingText")}</h1>
+            <h1>{t("ecosystem.ecosystemText")}</h1>
         </div>
     );
 };
 
-export default Pricing;
+export default Ecosystem;

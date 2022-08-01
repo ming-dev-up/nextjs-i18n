@@ -1,5 +1,17 @@
-import Layout from "../components/Layout";
+import Layout from "../components/Layouts";
+
+import { useRouter } from "next/router";
+
 import "../styles/globals.css";
+
+function getDirection(locale) {
+    if (locale === "kr") {
+        return "rtl";
+    }
+
+    return "ltr";
+}
+
 // import { DefaultSeo } from "next-seo";
 
 // const DEFAULT_SEO = {
@@ -23,11 +35,13 @@ import "../styles/globals.css";
 //     },
 // };
 function MyApp({ Component, pageProps }) {
+    const { locale } = useRouter();
+
     return (
         <>
             {/* <DefaultSeo {...DEFAULT_SEO} /> */}
             <Layout>
-                <Component {...pageProps} />
+                <Component {...pageProps} dir={getDirection(locale)} />
             </Layout>
         </>
     );

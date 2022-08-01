@@ -1,4 +1,4 @@
-import styles from "../styles/Layouts.module.css";
+import styles from "../../../styles/Layouts.module.css";
 
 export default function Footer() {
     return (

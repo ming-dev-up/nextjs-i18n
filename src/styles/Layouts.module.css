@@ -95,9 +95,3 @@
 .langSwitcher [data-language-switcher]:hover::after {
     width: calc(100% - 15px);
 }
-
-@media (max-width: 768px) {
-    .navLink {
-        display: block;
-    }
-}

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import styles from "../styles/Modal.module.css";
+import styles from "../../styles/Modal.module.css";
 
 import ReactDOM from "react-dom";
 import Link from "next/link";
@@ -17,14 +17,14 @@ function Modal({ show, onClose, children }) {
         onClose();
     };
 
+    // const noMoreModalToday = (e: any) => {};
+
     const modalContent = show ? (
         <div className={styles.overlay}>
             <div className={styles.modal}>
                 <div className={styles.header}>
                     <Link href="#">
-                        <button onClick={handleClose} className={styles.btn}>
-                            Close
-                        </button>
+                        <button onClick={handleClose}>Close</button>
                     </Link>
                 </div>
                 <div>{children}</div>
