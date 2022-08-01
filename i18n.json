@@ -1,0 +1,7 @@
+{
+    "locales": ["kr", "en"],
+    "defaultLocale": "kr",
+    "pages": {
+        "*": ["sample"]
+    }
+}

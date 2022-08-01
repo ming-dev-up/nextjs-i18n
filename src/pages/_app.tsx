@@ -4,14 +4,6 @@ import { useRouter } from "next/router";
 
 import "../styles/globals.css";
 
-function getDirection(locale) {
-    if (locale === "kr") {
-        return "rtl";
-    }
-
-    return "ltr";
-}
-
 // import { DefaultSeo } from "next-seo";
 
 // const DEFAULT_SEO = {
@@ -34,6 +26,7 @@ function getDirection(locale) {
 //         ],
 //     },
 // };
+
 function MyApp({ Component, pageProps }) {
     const { locale } = useRouter();
 
@@ -41,7 +34,7 @@ function MyApp({ Component, pageProps }) {
         <>
             {/* <DefaultSeo {...DEFAULT_SEO} /> */}
             <Layout>
-                <Component {...pageProps} dir={getDirection(locale)} />
+                <Component {...pageProps} />
             </Layout>
         </>
     );

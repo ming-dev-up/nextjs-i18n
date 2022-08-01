@@ -8,6 +8,8 @@ import { useTranslation } from "next-i18next";
 const Navbar = () => {
     const { t } = useTranslation();
 
+    const router = useRouter();
+
     return (
         <nav className={styles.nav}>
             <div className={styles.logo}>
@@ -32,6 +34,18 @@ const Navbar = () => {
                 <Link passHref href="/Community">
                     <a>Community</a>
                 </Link>
+            </div>
+
+            <div>
+                <ul>
+                    {router.locales.map(locale => (
+                        <li key={locale}>
+                            <Link href={router.asPath} locale={locale}>
+                                <a>{locale}</a>
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
             </div>
         </nav>
     );

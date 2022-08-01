@@ -4,13 +4,13 @@ import Modal from "../components/Modal/Modal";
 import styles from "../styles/Home.module.css";
 
 import { useRouter } from "next/router";
+import useTranslation from "next-translate/useTranslation";
 
 export default function Home() {
     let router = useRouter();
-
+    const { t } = useTranslation();
     const [showModal, setShowModal] = useState(false);
 
-    // let gretting = router.locale.
     return (
         <div>
             <Head>
@@ -23,6 +23,7 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
+                <h1>{t("sample:introText")}</h1>
                 <button
                     className={styles.btn}
                     onClick={() => setShowModal(true)}

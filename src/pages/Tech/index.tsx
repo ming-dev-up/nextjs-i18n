@@ -1,5 +1,6 @@
 import React from "react";
-import styles from "../styles/Home.module.css";
+
+import styles from "../../styles/Home.module.css";
 
 import { useTranslation } from "next-i18next";
 const Tech = () => {

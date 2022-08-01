@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
 
+const nextTranslate = require("next-translate");
+
 const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
-    i18n: {
-        locales: ["ko-KR", "en-US"],
-        defaultLocale: "ko-KR",
-    },
+    ...nextTranslate(),
 };
 
 module.exports = nextConfig;
